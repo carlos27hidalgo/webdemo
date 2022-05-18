@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <title>Demo site | Horeb gpo</title>
+    <!--link rel="icon" width="22" height="12" href="images/applelogo.png"-->
+    <!--container d-flex flex-column flex-md-row justify-content-between-->
+    <!--title>R Mac</title-->
+</head>
+
+<body>
+    <!------------------------------------------------ Navbar --------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand mr-auto mr-8">
+                <!--svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="25%"  fill="none" stroke="currentColor" class="d-block mx-auto" role="img" viewBox="0 0 2166.29 499" focusable="false" id="navbar-items"><path d="M257.66,244.45c-1.34,2.29-2.67,4.59-4,6.88,35.93,34.74,72.21,69.14,107.58,104.45,10.23,10.21,18.85,7.29,29.9,2.89C461,330.87,506.68,259.2,499.9,187.15,492.47,108.26,438.65,47.92,362.47,31.7c-30.54-6.5-61.2-3.46-91.79-3.69-76.74-.59-153.49-.2-237.75-.2,44.65,44.08,84.17,82.94,123.45,122,7,7,15.32,5.34,23.46,5.36,47.46.12,94.92-.13,142.38.16,31.53.19,50.21,16.36,50.73,43,.54,27.3-19.42,45.36-51.51,46C300.19,244.78,278.92,244.45,257.66,244.45ZM488.6,519.63c-80-79.81-157-153-229.39-230.62-32-34.38-64.81-49.95-111.23-45.32-36,3.6-72.74.72-114.07.72,91,91,177.23,177.17,263.38,263.44,6.65,6.66,12.76,12.16,23.56,12C374.58,519.33,428.32,519.63,488.6,519.63Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M257.66,244.45c21.26,0,42.53.33,63.78-.08,32.09-.62,52.05-18.68,51.51-46-.52-26.66-19.2-42.83-50.73-43-47.46-.29-94.92,0-142.38-.16-8.14,0-16.45,1.61-23.46-5.36-39.28-39.1-78.8-78-123.45-122,84.26,0,161-.39,237.75.2,30.59.23,61.25-2.81,91.79,3.69,76.18,16.22,130,76.56,137.43,155.45,6.78,72-38.93,143.72-108.76,171.52-11.05,4.4-19.67,7.32-29.9-2.89-35.37-35.31-71.65-69.71-107.58-104.45C255,249,256.32,246.74,257.66,244.45Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M488.6,519.63c-60.28,0-114-.3-167.75.26-10.8.12-16.91-5.38-23.56-12C211.14,421.58,124.91,335.4,33.91,244.41c41.33,0,78,2.88,114.07-.72,46.42-4.63,79.18,10.94,111.23,45.32C331.56,366.61,408.63,439.82,488.6,519.63Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M603.32,519V138.48h68L784.78,396.05h2.51L900.74,138.48h67.74V519H907.43V260.57h-3.34L809,474.65H762.48L667.15,260.57H663.8V519Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M1030.92,519l129.89-380.49h76.66L1367.09,519h-71.64l-32.06-101.18H1132.1L1099.49,519Zm165.29-311.08L1146.6,365.11h102.3l-49.62-157.22Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M1471.62,354c0,72.47,32.33,113.17,88.92,113.17,48.78,0,80.56-31.22,80.56-74.43h65.22v5.86c0,74.7-62.16,127.94-146.06,127.94-100.35,0-156.93-64.39-156.93-172.54V304.9C1403.33,197,1460.75,131,1560.26,131c84.18,0,146.06,54.91,146.06,132.68v5.85H1641.1c0-45.43-32.62-78.88-80.56-78.88-55.75,0-88.92,42.09-88.92,114.84Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M1958.47,448.07h-4.57V411.41h14c7.06,0,11.68,4.32,11.68,10.93,0,5.1-2.76,9.07-7.36,10.52l8.48,15.21h-5.36l-7.85-14.5h-9Zm0-18.54h9c4.7,0,7.37-2.54,7.37-7s-2.85-7-7.57-7h-8.82Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M2008,448.07h-22.71V411.41H2008v4.12H1989.9v11.76h17.2v4.07h-17.2V444H2008Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M2014.06,448.07V411.41h4.44l20.07,28.79h.23V411.41h4.53v36.66h-4.45l-20.07-28.68h-.23v28.68Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M2073.15,448.07h-22.71V411.41h22.71v4.12H2055v11.76h17.2v4.07H2055V444h18.14Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M2091.06,448.07h-4.32l-10-36.66h4.77l7.35,29.93h.2l8.25-29.93H2102l8.26,29.93h.2l7.34-29.93h4.78l-10,36.66h-4.32L2099.77,419h-.25Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M2150,448.07h-22.71V411.41H2150v4.12h-18.14v11.76H2149v4.07h-17.2V444H2150Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M2168.54,411.41c10.88,0,17.31,6.79,17.31,18.32s-6.41,18.34-17.31,18.34H2156V411.41Zm-8,32.55h7.7c8.31,0,12.93-5.08,12.93-14.18s-4.6-14.25-12.93-14.25h-7.7Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M1996.77,500.42c.43,4,4.19,6.58,9.43,6.58,5,0,8.56-2.62,8.56-6.22,0-3.1-2.16-5-7.09-6.28l-4.7-1.22c-6.76-1.73-9.76-4.7-9.76-9.68,0-6.09,5.34-10.36,13-10.36,7.29,0,12.58,4.32,12.78,10.46h-4.57c-.41-3.93-3.59-6.35-8.36-6.35s-8.06,2.47-8.06,6c0,2.77,2,4.42,7,5.72l3.83,1c7.6,1.91,10.67,4.83,10.67,10.09,0,6.71-5.28,10.9-13.72,10.9-7.77,0-13.16-4.22-13.59-10.7Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M2034.34,510.51V478h-11.81v-4.11h28.2V478h-11.81v32.55Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M2085.64,492.19c0,11.64-6.51,18.93-16.9,18.93s-16.89-7.29-16.89-18.93,6.5-18.95,16.89-18.95S2085.64,480.55,2085.64,492.19Zm-29.09,0c0,9,4.7,14.71,12.19,14.71s12.2-5.69,12.2-14.71-4.7-14.74-12.2-14.74S2056.55,483.15,2056.55,492.19Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M2095.9,510.51h-4.57V473.85h14c7.06,0,11.68,4.32,11.68,10.92,0,5.11-2.77,9.07-7.37,10.52l8.49,15.22h-5.36L2104.92,496h-9Zm0-18.55h9c4.7,0,7.37-2.54,7.37-7s-2.85-7-7.57-7h-8.82Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M2145.47,510.51h-22.72V473.85h22.72V478h-18.14v11.77h17.2v4.06h-17.2v12.6h18.14Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><rect x="1762.7" y="106.82" width="22.33" height="389.8" style="fill:#fff"/><path d="M1926.61,240.48V225.79c.55-1.57.37-3.22.51-4.83a119.39,119.39,0,0,1,5-26c5.29-16.83,14.22-31.32,27.83-42.7a79.41,79.41,0,0,1,47.85-18.93c10.78-.57,20.84,2.47,30.75,6.23,6.25,2.37,12.37,5.12,18.82,7,3,.86,6,1.63,9.16,1.27,6.47-.73,12.35-3.37,18.32-5.67a217.32,217.32,0,0,1,22.52-7.71c10.11-2.68,20.31-2.52,30.52-1.06a79.22,79.22,0,0,1,27.88,9.44,72.42,72.42,0,0,1,18.75,15c1.9,2.13,3.59,4.46,5.35,6.72.44.58,1,1.12-.11,1.82a79.23,79.23,0,0,0-16.12,13.74,72.1,72.1,0,0,0-18.51,59,70.6,70.6,0,0,0,19.61,41,76.88,76.88,0,0,0,23.56,16.65c.94.42,1.12.89.79,1.86-1.5,4.44-3.09,8.85-4.9,13.18a195.14,195.14,0,0,1-9.83,20.14,237.74,237.74,0,0,1-14.58,22.34c-5.83,8.09-12,15.9-19.83,22.21-10.13,8.15-21.56,11.27-34.42,8.95-6.85-1.24-13.13-4.09-19.44-6.83a66.53,66.53,0,0,0-21.84-5.65c-11.88-.83-23.13,1.63-33.94,6.48-6.47,2.9-13,5.53-20.11,6.62a34.89,34.89,0,0,1-20.24-2.51c-7.87-3.59-14.13-9.3-19.87-15.57a186.85,186.85,0,0,1-13.42-17,203.3,203.3,0,0,1-17.73-28.81,221.34,221.34,0,0,1-13.14-32.76,204.5,204.5,0,0,1-8.66-43.46C1927,244.17,1927.24,242.28,1926.61,240.48Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/><path d="M2129.66,51.5a50.57,50.57,0,0,1,.29,7.88,60.48,60.48,0,0,1-2.49,16.75,77.94,77.94,0,0,1-10.22,22.12,69.14,69.14,0,0,1-11.53,13.64c-9.35,8.32-20,14.26-32.44,16.44a34.6,34.6,0,0,1-9.59.47c-.73-.08-1.08-.28-1.19-1.08a44.89,44.89,0,0,1-.15-9.76,64.45,64.45,0,0,1,4.77-19.29,79.19,79.19,0,0,1,13-21.41c9.21-10.76,20.76-18,34-22.73a54.9,54.9,0,0,1,12.44-2.76,1.89,1.89,0,0,0,1.09-.27Z" transform="translate(-32.93 -27.5)" style="fill:#fff"/></svg-->
+                <svg width="14%"  fill="none" stroke="currentColor" role="img" viewBox="-3.1549443837488127 -8.932453399976211 286.6199443837488 242.7024533999762" width="2500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a"><stop offset="0" stop-color="#f0f3f5"/><stop offset=".056" stop-color="#e2e5e8"/><stop offset=".138" stop-color="#d4d8dd"/><stop offset=".242" stop-color="#ccd0d6"/><stop offset=".44" stop-color="#caced4"/><stop offset=".568" stop-color="#b3b7bd"/><stop offset=".835" stop-color="#797c83"/><stop offset="1" stop-color="#52545c"/></linearGradient><linearGradient id="c" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-907.035" x2="-907.035" xlink:href="#a" y1="1209.688" y2="1300.343"/><linearGradient id="d" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-907.031" x2="-907.031" xlink:href="#a" y1="1278.762" y2="1327.886"/><linearGradient id="e" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-890.724" x2="-921.397" xlink:href="#a" y1="1287.791" y2="1313.529"/><linearGradient id="f" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-887.604" x2="-932.331" xlink:href="#a" y1="1244.974" y2="1270.797"/><linearGradient id="g" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-922.726" x2="-922.726" xlink:href="#a" y1="1351.951" y2="1274.035"/><linearGradient id="h" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-891.344" x2="-891.344" xlink:href="#a" y1="1351.951" y2="1274.035"/><linearGradient id="i" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-890.393" x2="-890.393" xlink:href="#a" y1="1352.606" y2="1222.572"/><linearGradient id="j" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-923.675" x2="-923.675" xlink:href="#a" y1="1352.606" y2="1222.572"/><linearGradient id="b"><stop offset="0" stop-color="#f0f3f5"/><stop offset=".253" stop-color="#edf0f3"/><stop offset=".406" stop-color="#e5e8ea"/><stop offset=".531" stop-color="#d7dadc"/><stop offset=".642" stop-color="#c3c5c9"/><stop offset=".744" stop-color="#a9abaf"/><stop offset=".839" stop-color="#888b90"/><stop offset=".926" stop-color="#63656b"/><stop offset="1" stop-color="#3d3f46"/></linearGradient><linearGradient id="k" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-907.038" x2="-907.038" xlink:href="#b" y1="1351.944" y2="1192.832"/><linearGradient id="l" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-907.03" x2="-907.03" xlink:href="#b" y1="1351.952" y2="1192.83"/><linearGradient id="m" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-907.034" x2="-907.034" xlink:href="#b" y1="1351.935" y2="1192.817"/><linearGradient id="n" gradientTransform="matrix(1 0 0 -1 1045.93 1353.947)" gradientUnits="userSpaceOnUse" x1="-907.033" x2="-907.033" y1="1318.944" y2="1273.596"><stop offset="0" stop-color="#caced4"/><stop offset="1" stop-color="#52545c"/></linearGradient><path d="M141.396 208.536c-.043-13.945 11.196-25.195 25.234-25.219 13.694.022 24.942 11.272 25.218 25.219-.273 13.789-11.521 25.039-25.218 25.234-14.038-.195-25.276-11.445-25.234-25.234zm25.235 15.938c7.578-.117 13.852-7.238 13.93-15.938-.078-8.867-6.352-15.988-13.93-15.938-7.906-.052-14.195 7.069-13.945 15.938-.25 8.699 6.039 15.82 13.945 15.938m53.76-30.547v38.515h-10.614v-38.515h-15.273v-8.617H235v8.617zm27.214 27.879l-3.974 10.637h-12.604l19.91-47.133h13.27l19.258 47.133H270.86l-3.983-10.637zm9.973-7.957h6.629l-6.629-17.267-6.641 17.267zM25.223 193.927v38.515H14.602v-38.515H0v-8.617h39.832v8.617zm17.265 14.609c.021-13.945 11.254-25.195 25.214-25.219 13.78.022 25.03 11.272 25.233 25.219-.203 13.789-11.453 25.039-25.233 25.234-13.96-.195-25.194-11.445-25.214-25.234zm25.214 15.938c7.668-.117 13.937-7.238 13.944-15.938-.008-8.867-6.276-15.988-13.944-15.938-7.828-.052-14.108 7.069-13.925 15.938-.183 8.699 6.097 15.82 13.925 15.938m49.132 7.968h5.305v-17.93l18.593-29.202h-11.945l-11.953 19.906-11.289-19.906H92.936l18.593 29.202v17.93z" fill="#ab002f"/><path d="M8.547 81.561c0 44.972 58.476 81.562 130.35 81.562 71.873 0 130.35-36.59 130.35-81.562C269.246 36.585 210.77 0 138.896 0S8.547 36.585 8.547 81.561zm4 0c0-42.762 56.679-77.554 126.35-77.554 69.669 0 126.35 34.792 126.35 77.554 0 42.771-56.681 77.562-126.35 77.562-69.671-.001-126.35-34.79-126.35-77.562z"/><path d="M126.58 14.827c-30.508 1.863-52.667 9.949-56.444 20.602a9.999 9.999 0 0 0-.586 3.345c0 1.797.508 3.594 1.516 5.312C75.3 51.3 88.443 57.249 107.146 60.44l1.98.324.332-1.978c3.07-18.727 9.809-33.453 18.496-40.406l4.922-3.944zM74.519 42.069c-.652-1.109-.973-2.203-.973-3.281 0-.68.117-1.344.359-2.02 2.883-8.138 22.468-15.246 47.487-17.539-7.137 8.073-12.625 21.082-15.488 36.887-16.258-3.008-27.948-8.188-31.385-14.047zm46.483 17.914l-.391 2.176 2.207.168c5.234.391 10.645.602 16.074.602 5.434 0 10.848-.211 16.083-.602l2.203-.168-.392-2.176c-3.009-16.898-9.703-26.992-17.891-26.992-8.194 0-14.885 10.094-17.893 26.992zm17.894-22.992c5.598 0 10.766 8.383 13.489 21.469-4.427.289-8.936.469-13.493.469-4.551 0-9.062-.18-13.484-.469 2.715-13.086 7.891-21.469 13.488-21.469zm10.938-18.609c8.684 6.953 15.43 21.681 18.5 40.406l.328 1.978 1.977-.324c18.711-3.191 31.861-9.142 36.08-16.355 1.641-2.772 1.953-5.766.938-8.655-3.776-10.652-25.936-18.738-56.442-20.603l-6.288-.391zm6.574.847c25.012 2.293 44.596 9.414 47.471 17.539.25.676.367 1.34.367 2.02 0 1.078-.328 2.172-.965 3.281-3.449 5.858-15.143 11.039-31.393 14.047-2.863-15.804-8.343-28.813-15.48-36.887zM50.832 43.28C37.121 54.765 29.875 68.409 29.875 82.744c0 33.722 41.12 62.226 95.643 66.288l6.09.457-4.637-3.961c-11.945-10.219-19.363-34.465-19.363-63.28l.125-6.808-1.672-.34c-28.679-5.14-49.082-17.199-51.987-30.703l-.695-3.242-2.547 2.125zM33.879 82.744c0-12.292 5.996-24.089 17.254-34.335 5.245 13.645 24.843 25.012 52.545 30.301-.035 1.562-.066 3.538-.066 3.538 0 26.718 6.34 49.792 16.797 62.241-49.68-5.301-86.53-31.25-86.53-61.745zm85.494-3.604l-.012.726c0 26.784 8.398 46.991 19.535 46.991 11.133 0 19.532-20.207 19.532-46.991l-.027-2.89-2.148.184c-5.664.496-11.496.742-17.355.742s-11.699-.246-17.348-.742l-2.156-.195zm35.031 2.147c-.301 24.921-8.152 41.573-15.508 41.573-7.363 0-15.215-16.652-15.508-41.573 5.086.375 10.281.609 15.508.609 5.235 0 10.415-.234 15.508-.609zm69.307-36.89c-2.902 13.504-23.309 25.562-51.979 30.703l-1.68.312.133 6.835c0 28.815-7.422 53.062-19.363 63.28l-4.637 3.961 6.082-.457c54.528-4.062 95.649-32.566 95.649-66.288 0-14.335-7.254-27.979-20.965-39.464l-2.539-2.125zm2.941 4.012c11.266 10.246 17.266 22.043 17.266 34.335 0 30.495-36.848 56.444-86.533 61.745 10.457-12.449 16.797-35.523 16.797-62.241 0 0-.039-1.977-.066-3.538 27.693-5.289 47.29-16.657 52.536-30.301z"/><path d="M225.129 34.101c.184.508.352 1.026.484 1.547.754 2.996.598 5.938-.379 8.805C238.242 55.18 245.91 68.41 245.91 82.745c0 35.78-47.914 64.792-107.014 64.792-59.104 0-107.014-29.012-107.014-64.792 0-14.323 7.676-27.564 20.668-38.292-.969-2.867-1.125-5.809-.371-8.805a9.638 9.638 0 0 1 .621-1.652c-17.75 12.646-28.512 29.219-28.512 47.37 0 39.632 51.308 71.757 114.607 71.757 63.291 0 114.607-32.125 114.607-71.757.002-18.113-10.717-34.648-28.373-47.265z" fill="url(#c)"/><path d="M154.818 60.335c-5.051.379-10.375.586-15.926.586-5.547 0-10.867-.207-15.918-.586h-.016l-3.301 2.398c6.09.531 12.521.832 19.238.832 6.718 0 13.148-.301 19.242-.832zm58.541-25.141c-4.023-13.297-37.187-23.062-74.463-23.062-37.27 0-70.433 9.767-74.456 23.062-3.492 11.535 15.57 22.211 45.644 26.445l-2.613-3.181c-24.328-4.14-38.788-12.968-35.452-22.354 4.043-11.396 33.409-19.648 66.874-19.648 33.464 0 62.837 8.254 66.876 19.648 3.332 9.387-11.121 18.215-35.455 22.354l-2.604 3.181c30.063-4.234 49.138-14.91 45.649-26.445z" fill="url(#d)"/><path d="M123.014 60.335c2.793-15.52 8.852-25.219 15.879-25.219 7.035 0 13.089 9.699 15.886 25.219h.056l3.267 2.371c-2.758-20.496-10.312-33.594-19.204-33.594-8.898 0-16.449 13.098-19.203 33.594l3.266-2.371z" fill="url(#e)"/><path d="M159.092 74.319l-2.672 4.832c0 .352.016.714.016 1.081 0 25.726-7.867 45.232-17.542 45.232-9.684 0-17.535-19.508-17.535-45.232 0-.406.008-.809.016-1.198l-2.676-4.715a145.44 145.44 0 0 0-.117 5.886c0 29.167 9.094 51.261 20.316 51.261s20.324-22.094 20.324-51.261a147.012 147.012 0 0 0-.13-5.886z" fill="url(#f)"/><path d="M110.127 61.651c3.844-28.488 15.27-49.521 28.77-49.521-14.473 0-26.809 18.634-31.387 46.384l2.578 3.137z" fill="url(#g)"/><path d="M167.67 61.651h.027l2.578-3.137c-4.57-27.75-16.914-46.384-31.379-46.384 13.5.002 24.934 21.033 28.774 49.521z" fill="url(#h)"/><path d="M172.072 77.053l-3.281-3.918h-.027c.184 3.113.289 6.277.289 9.491 0 38.934-13.504 70.495-30.156 70.495 18.671 0 33.281-29.272 33.281-70.495 0-1.886-.039-3.736-.106-5.573z" fill="url(#i)"/><path d="M108.748 82.627c0-3.214.105-6.378.285-9.491h-.022l-3.289 3.906a155.884 155.884 0 0 0-.109 5.585c0 41.223 14.621 70.495 33.285 70.495-16.646 0-30.15-31.562-30.15-70.495z" fill="url(#j)"/><path d="M225.234 44.452c4.973 4.102 9.168 8.578 12.449 13.332a45.87 45.87 0 0 0-8.75-20.82 89.125 89.125 0 0 0-3.806-2.862c.185.508.353 1.026.483 1.547.757 2.995.601 5.936-.376 8.803zm-172.683 0c-.969-2.867-1.125-5.809-.371-8.805a9.638 9.638 0 0 1 .621-1.652 119.88 119.88 0 0 0-3.941 2.969 46.053 46.053 0 0 0-8.75 20.82c3.281-4.754 7.468-9.231 12.441-13.332z" fill="#2d2f34"/><path d="M10.547 81.561c0-43.934 57.46-79.558 128.35-79.558 70.88 0 128.341 35.624 128.341 79.558 0 43.943-57.461 79.554-128.341 79.554-70.89-.001-128.35-35.61-128.35-79.554zm128.349 71.561c63.292 0 114.607-32.125 114.607-71.757 0-39.636-51.315-71.772-114.607-71.772-63.3 0-114.611 32.138-114.611 71.772 0 39.632 51.312 71.757 114.611 71.757z" fill="url(#k)"/><path d="M108.748 82.627c0-38.525 13.504-70.495 30.148-70.495 16.652 0 30.157 31.97 30.157 70.495 0 38.934-13.505 70.495-30.157 70.495s-30.148-31.562-30.148-70.495zm30.148 48.839c11.223 0 20.325-22.094 20.325-51.249 0-30.257-9.103-51.104-20.325-51.104S118.58 49.96 118.58 80.217c0 29.155 9.094 51.249 20.316 51.249z" fill="url(#l)"/><path d="M52.18 35.647C55.488 22.55 95.494 3.488 138.896 3.488c43.398 0 82.03 13.62 86.717 32.159 5.246 20.78-33.309 39.586-86.717 39.586-53.417 0-91.97-18.805-86.716-39.586zm86.716-23.515c-37.27 0-70.433 9.767-74.456 23.062-4.508 14.895 28.593 28.371 74.456 28.371 45.872 0 78.967-13.478 74.463-28.371-4.023-13.297-37.185-23.062-74.463-23.062z" fill="url(#m)"/><path d="M118.658 74.28l.023.016 2.754 4.855c5.605.479 11.434.753 17.461.753 6.055 0 11.898-.273 17.54-.765l2.68-4.845.016-.016c-6.445.613-13.203.953-20.234.953a213.256 213.256 0 0 1-20.24-.951zm107.408-34.14c-.688 14.858-23.527 28.022-57.287 32.983l.012.012 3.293 3.935c33.033-5.938 54.764-20.524 53.982-36.93zm-174.339 0c-.781 16.422 20.948 30.991 53.975 36.93l3.301-3.935.008-.012c-33.766-4.96-56.589-18.124-57.284-32.983z" fill="url(#n)"/></svg>
+            </a>
+            <button type="button"  data-bs-toggle="collapse" data-bs-target="#navbar-menu" class="navbar-toggler btn btn-danger ms-auto ms-8">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="#" id="navbar-items">Vehículos</a></li>
+                <li><a class="nav-link" href="#" id="navbar-items">Accesorios</a></li>
+                <li><a class="nav-link" href="#" id="navbar-items">Dealers</a></li>    
+                <a class="py-2 d-none d-md-inline-block" href="#" aria-label="Product"></a>
+              </ul>
+            </div>      
+        </div>
+    </nav>
+
+    <!------------------------------------------------ Fin navbar --------------------------------------------------------------------->
+
+    <!--div class="overflow-hidden p-3 p-md-5  text-center bg-light" id="head-content" data-aos="fade-up">
+        <div class="col-md-5 p-lg-5 mx-auto my-5" data-aos="fade-up">
+            <div class="bg-body shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;">
+                <img src="images/macbookair11uno.jpg" width="100%" alt=""-->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                data-aos-delay="200"
+                data-aos-offset="0">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/toyota_vehiculos1.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-outline-secondary btn-rounded">Explora Vehículo Uno</button>
+                        
+                        <p></p>
+                      </div>
+                      
+
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/toyota_vehiculos2.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-outline-secondary btn-rounded">Explora Vehículo Dos</button>
+                        <p></p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/toyota_vehiculos3.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-outline-secondary btn-rounded">Explora Vehículo Tres</button>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            <!--/div>
+          </div-->
+          <h1 class="display-4 fw-normal text-center bg-light" id="head-content" style="color: rgb(0, 0, 0);">Explora nuestros Vehículos</h1>
+            <!--h1 class="display-4 font-weight-normal" style="color: rgb(0, 0, 0);">Explora nuestros Vehiculos</h1-->
+            <p class="lead font-weight-normal text-center bg-light" id="head-content" style="color: rgb(0, 0, 0);">Ecuador</p>
+            <!--a class="btn btn-outline-light" href="#" >Pedir Ahora</a-->
+        </div>
+        <!--div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div-->
+    </div>
+
+
+    <!------------------------------------------------ DISPLAY ONE--------------------------------------------------------------------->
+    <main>
+        <!--div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style="background-color: black;" data-aos="">
+          <div class="my-3 p-3">
+            <h2 class="display-4 fw-normal" style="color: white">Catálogo</h2>
+            <p class="lead fw-normal" style="color: white">En esta sección encontraras nuestros vehículos</p-->
+            <!--a class="btn btn-outline-secondary" href="#" style="color: white">Contactar con un asesor</a-->
+          <!--/div-->
+          <!--div class="product-device shadow-sm d-none d-md-block"></div>
+          <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div-->
+        <!--/div-->
+
+        <!--div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 overflow-hidden" >
+          <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/toyota_vehiculos3.jpg" class="d-block w-100" alt="...">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="images/toyota_vehiculos2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/toyota_vehiculos1.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div-->
+
+        <div class="media-scroller">
+          <div class="media-element"><img src="images/car1.jpg" alt=""></div>
+          <div class="media-element"><img src="images/car2.jpg" alt=""></div>
+          <div class="media-element"><img src="images/car5.png" alt=""></div>
+          <div class="media-element"><img src="images/car6.jpg" alt=""></div>
+          <div class="media-element"><img src="images/car7.jpg" alt=""></div>
+          <div class="media-element"><img src="images/car8.jpg" alt=""></div>
+          <div class="media-element"><img src="images/car9.jpeg" alt=""></div>
+          <div class="media-element"><img src="images/car4.webp" alt=""></div>
+        </div>
+        
+      
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" data-aos="">
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5 fw-normal" id="head-content">Toyota Uno</h2>
+              <!--p class="lead">$399.</p-->
+              <a href="#">Mas información ></a>
+            </div>
+            <!--div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+              <a href="equipo1.html">
+                <img src="images/macproblema.jpg" width="100%" alt="">
+              </a>
+            </div-->
+            <div class="card mb-3" style="max-width: 540px;" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="images/toyota1.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" data-aos="">
+            <div class="my-3 p-3">
+              <h2 class="display-5 fw-normal" id="head-content">Toyota Dos</h2>
+              <!--p class="lead">$420.</p-->
+              <a href="#">Mas información ></a>
+            </div>
+            <!--div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+              <a href="equipo2.html">
+                <img src="images/toyota2.jpg" width="100%" alt="">
+              </a>
+            </div-->
+            <div class="card mb-3" style="max-width: 540px;" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="images/toyota2.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" >
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0">
+            <!--div class="my-3 p-3">
+              <h2 class="display-5">MacBook Air 13" (2015)</h2>
+              <p class="lead">$450.</p>
+              <a href="equipo3.html">Mas información ></a>
+            </div-->
+            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+              <a href="equipo3.html">
+                <img src="images/car8.jpg" width="100%" alt="" id="car">
+              </a>
+            </div>
+          </div>
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" >
+            <!--div class="my-3 py-3">
+              <h2 class="display-5">Los Mejores Precios</h2>
+              <p class="lead">Pregunta por todas nuestras ofertas.</p>
+            </div-->
+            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <img src="images/car2.jpg" width="100%" alt="" id="car">
+            </div>
+          </div>
+        </div>
+      
+        <!--div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Another headline</h2>
+              <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div>
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Another headline</h2>
+              <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div>
+        </div>
+      
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Another headline</h2>
+              <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div>
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Another headline</h2>
+              <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div>
+        </div-->
+      
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style="background-color: rgb(232, 226, 226);">
+        <div class="my-3 p-3">
+          <h2 class="display-4 fw-normal" style="color: rgb(0, 0, 0)">Armalo tu mismo</h2>
+          <p class="lead fw-normal" style="color: rgb(0, 0, 0)">Tenemos el equipo que necesites, contactanos para más información</p>
+          <a class="btn btn-outline-secondary" href="https://wa.me/593999001868?text=Hola,%20quisiera%20más%20información." target="_blank" style="color: rgb(0, 0, 0)">Contactar con un asesor</a>
+        </div>
+
+        <div class=" pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color: rgb(104, 12, 12);">
+            <div class="my-3 p-3">
+                <h2 class="display-5">Comprar</h2>
+                <p class="lead">Reserva ahora</p>
+            </div>
+            <div class="bg-black shadow-sm mx-auto" style="width: 80%; height: 600px; border-radius: 21px;" data-aos="fade-up" data-aos-duration="3000">
+                <img src="images/car1.jpg" style="border-radius: 20px;" width="90%">
+            </div>
+        </div>
+        <div class=" pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color: black;">
+            <div class="my-3 p-3">
+                <h2 class="display-5">Somos tu aliado</h2>
+                <p class="lead">Nuestro equipo listo para ti</p>
+            </div>
+            <div class="shadow-sm mx-auto" style="width: 80%; height: 500px; border-radius: 20px; background-color: black; margin-top: 100px;">
+                <!--img src="images/macnegro4.jpg" style="border-radius: 20px;" width="90%"-->
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" >
+                  <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" >
+                    <!--div class="my-3 p-3">
+                      <h2 class="display-5">MacBook Air 13" (2015)</h2>
+                      <p class="lead">$450.</p>
+                      <a href="equipo3.html">Mas información ></a>
+                    </div-->
+                    <div class="bg-body shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;">
+                      <a href="equipo3.html">
+                        <img src="images/conducir1.jpg" width="100%" alt="" id="car">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" >
+                    <!--div class="my-3 py-3">
+                      <h2 class="display-5">Los Mejores Precios</h2>
+                      <p class="lead">Pregunta por todas nuestras ofertas.</p>
+                    </div-->
+                    <div class="bg-body shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;" >
+                        <img src="images/toyotaevent.jpg" width="100%" alt="" id="car">
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    <!------------------------------------------------ BOITE 2 --------------------------------------------------------------------->
+
+        <!--div class=" pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color: black;">
+            <div class="my-3 p-3">
+                <h2 class="display-5">Últimos modelos</h2>
+                <p class="lead">Traemos lo mas reciente</p>
+            </div>
+            <div class="shadow-sm mx-auto" style="width: 80%; height: 350px; border-radius: 21px 21px 0 0; margin-top: 100px;" data-aos="fade-up">
+                <img src="images/macnegro3.jpg" style="border-radius: 20px;" width="100%">
+            </div>
+        </div>
+        <div class="pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color: black;">
+            <div class="my-3 py-3">
+                <h2 class="display-5">A elección</h2>
+                <p class="lead">Escoje el equipo a tu medida</p>
+            </div>
+            <div class="shadow-sm mx-auto" style="width: 80%; height: 800px; border-radius: 21px 21px 0 0; background-color: black;" data-aos="fade-up">
+                <img src="images/macnegro2.jpg" style="border-radius: 20px;" width="80%">
+            </div>
+        </div-->
+      </main>
+
+      <!--div class="grid-container">
+        <div><img src="images/tacometro.png" alt=""></div>
+        <div><img src="images/gas-station.png" alt=""></div>
+        <div><img src="images/bateria.png" alt=""></div>
+      </div-->
+
+    <!------------------------------------------------ Fin content --------------------------------------------------------------------->
+
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <!--svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+                    viewBox="0 0 24 24" focusable="false">
+                    <title>Producto</title>
+                    <circle cx="12" cy="12" r="10" />
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                </svg-->
+                <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="4%"  fill="none" stroke="currentColor" class="d-block mb-2" role="img" viewBox="0 0 2402.18 511.96" focusable="false"><path d="M592.51,244.41c0,67.8-39.72,114.37-85.61,131.15L601.41,566h-92.8L425.4,389.26H333.29V566H251.45V98.54H432.94C533.27,98.54,592.51,156.06,592.51,244.41Zm-173.27,79.1c55.13,0,88-26,88-76.7,0-51.37-33.91-79.79-86-79.79h-88V323.51Z" transform="translate(-251.45 -73.05)" style="fill:#fff"/><path d="M697.31,566V98.54h83.55l139.37,316.4h3.08l139.37-316.4h83.21V566h-75V248.52h-4.11L950,511.5H892.84l-117.11-263h-4.11V566Z" transform="translate(-251.45 -73.05)" style="fill:#fff"/><path d="M1244.2,460.82c0-64.71,44.86-107.86,128.41-107.86h90.74V319.75c0-38.7-25.34-57.19-65.4-57.19-39.72,0-57.87,16.43-63.35,39.72h-76.7c4.45-59.93,48.62-104.44,142.1-104.44,78.76,0,143.83,32.19,143.83,123.62V566h-76.71V519.38h-3.77c-15.41,27.39-46.56,52-100,52C1292.82,571.43,1244.2,528.62,1244.2,460.82Zm219.15-16.77V405.69h-76c-42.8,0-62,21.23-62,50,0,35.95,30.48,52.73,63.35,52.73C1430.14,508.42,1463.35,481.37,1463.35,444.05Z" transform="translate(-251.45 -73.05)" style="fill:#fff"/><path d="M1636.64,359.12c0-98.28,61.29-162.31,158.2-162.31,93.15,0,144.51,57.19,145.88,122.94H1865c-3.08-23.64-20.2-54.79-68.49-54.79-51,0-78.75,37.32-78.75,95.53v47.25c0,59.59,29.79,96.57,79.1,96.57,46.57,0,65.06-22.25,69.85-51.36h76c-2,65.4-50.34,119.16-148.27,119.16s-157.86-62.66-157.86-164.37Z" transform="translate(-251.45 -73.05)" style="fill:#fff"/><path d="M2381.8,216.44c12.62-1.82,25.62,2.44,38.61,6.43,5.41,1.66,10.55,4.13,15.91,6,9.18,3.14,18.08,7.36,28.26,6.94a50.05,50.05,0,0,0,13.91-3c5.28-1.76,10.39-4,15.66-5.77,8-2.73,15.87-5.61,24-8a106.9,106.9,0,0,1,39.39-3.83,124.38,124.38,0,0,1,23.38,4,118.4,118.4,0,0,1,32.58,14.36A103.92,103.92,0,0,1,2635,252.05c1.66,1.84,3.39,3.62,5,5.48s.81,3-.69,3.87a109.82,109.82,0,0,0-21,17.07,81.07,81.07,0,0,0-15.25,20.33c-2.66,5.24-5.81,10.24-7.71,15.83-3.63,10.67-5.75,21.62-5.33,32.83.39,10.41,1.57,20.68,5,30.77a141.11,141.11,0,0,0,9,19.89c2,3.78,4.93,7.13,7.79,10.46s5.69,6.43,8.77,9.47a108.13,108.13,0,0,0,16.72,13,82.28,82.28,0,0,0,14.91,7.87,1.86,1.86,0,0,1,1.11,2.7,281,281,0,0,1-19,41.69c-2.9,5.12-5.9,10.18-8.85,15.28-1.1,1.91-2.75,3.48-4,5.32q-9.51,13.77-20.29,26.68A132.63,132.63,0,0,1,2584.65,547a58.6,58.6,0,0,1-21.43,11.55,60.42,60.42,0,0,1-26.79,1.43c-11.76-1.94-22.31-6.85-33.13-11.13a90.22,90.22,0,0,0-35.08-6.29c-12.59.22-24.91,2.36-36.44,7.38a187.69,187.69,0,0,1-19.94,7.82c-12.78,3.88-25.77,5.46-38.71.53a70.88,70.88,0,0,1-9.41-4.65c-6.34-3.57-11.67-8.33-16.93-13.22-8.56-8-15.52-17.16-22.58-26.29a269.35,269.35,0,0,1-16.71-23.75c-3.67-6-6.72-12.28-10.21-18.35-4.72-8.17-8.19-16.87-11.76-25.51-2.73-6.61-5-13.41-7.14-20.26-2.68-8.77-5.09-17.6-7-26.55-2-9.87-3.47-19.82-4.54-29.84-1.1-10.24-.82-20.45-.38-30.67a149.57,149.57,0,0,1,4.84-30.05,126,126,0,0,1,31-57A109,109,0,0,1,2319.94,237a89.7,89.7,0,0,1,16.53-9.62,151.51,151.51,0,0,1,21.35-7.79A80.67,80.67,0,0,1,2381.8,216.44Z" transform="translate(-251.45 -73.05)" style="fill:#fff"/><path d="M2555.37,113.89c-.17,13.36-3.69,26-9.22,38.16A99.89,99.89,0,0,1,2534.28,172a97.83,97.83,0,0,1-14.42,15.18,113.94,113.94,0,0,1-28.6,17.18c-8.41,3.64-17.33,5-26.36,5.31-6.22.21-5.43-.69-5.68-5.14a81.14,81.14,0,0,1,2.58-23.65c1.12-4.67,3.41-9.07,5-13.66,1.86-5.51,5.08-10.42,8.1-15.28a85.31,85.31,0,0,1,16.88-20.12,116.93,116.93,0,0,1,17-12.29,118.85,118.85,0,0,1,25-11.25c5.21-1.57,10.53-2.5,15.83-3.56,4.56-.92,5.65,0,5.75,4.53C2555.4,110.77,2555.37,112.33,2555.37,113.89Z" transform="translate(-251.45 -73.05)" style="fill:#fff"/><line x1="1873.49" y1="2" x2="1873.49" y2="509.96" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px"/></svg>
+                <small class="d-block mb-3 text-muted">Horeb Gpo &copy; 2022-2026</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Servicios</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Cambios</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Encuentra un Distribuidor</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Accesorios</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Construye tu Toyota</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Calculador de pagos</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Toyota vehiculos usados certificados</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Vehiculos</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Todos los Vehiculos</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">SUVs</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Camionetas</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Electricos</a></li>
+                </ul>   
+            </div>
+            <div class="col-6 col-md">
+                <h5>Links de ayuda</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Seguridad</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Vendedores</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Toyota Serivicio Financiero</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Toyota Care</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Sobre Toyota</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Nosotros</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Toyota Racing</a></li>
+                    <li><a class="text-muted" href="https://www.apple.com/la/" target="_blank">Toyota Worldwide</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--a href="https://wa.me/593999001868?text=Hola,%20quisiera%20más%20información." class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a-->
+</body>
+
+<script src=""></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!--script src="node_modules/bootstrap/dist/js/bootstrap.js"></script-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-out-back',
+    duration: 1000 
+  });
+</script>
+</html>
+    
